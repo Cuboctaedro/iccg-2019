@@ -1,4 +1,4 @@
-baseURL: 
+baseURL: "https://iccg-2019.netlify.com/"
 footnoteReturnLinkContents: ↩
 permalinks:
   blog: /:title/
