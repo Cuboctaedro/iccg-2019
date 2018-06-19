@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="trip" itemprop="mainEntity" itemscope itemtype="https://schema.org/Event">
+    <header>
+        <h1 itemprop="name">{{ .Title }}</h1>
+        <time itemprop="doorTime">{{ dateFormat "Monday, Jan 2, 2006" .Params.eventdate }}</time>
+        <div >
+            <span class="label">Participants:</span>
+            {{ .Params.participants }}
+        </div>
+    </header>
+    <div itemprop="about">
+            <h3>{{ .Params.trip_title }}</h3>
+            <div>{{ .Content }}</div>
+        </div>
+        <div>
+            <span class="label">Place of Discussion:</span>
+            {{ .Params.location }}
+        </div>
+    </article>
+{{ end }}

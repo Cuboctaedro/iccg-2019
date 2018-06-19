@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article itemprop="mainEntity" itemscope itemtype="https://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">{{ .Title }}</h1>
+        <time itemprop="datePublished"> {{ .Date.Format "Mon Jan 2, 2006" }} </time>
+    </header>
+    <div itemprop="description">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

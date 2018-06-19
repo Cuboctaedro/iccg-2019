@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+    <header>
+        <h1>{{ .Title }}</h1>
+    </header>
+    <div>
+        {{ .Content }}
+    </div>
+    <div>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+            function onSubmit(token) {
+                document.getElementById("invisible-recaptcha-form").submit();
+            }
+        </script>
+        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/9993b0df2c87" enctype="multipart/form-data" method="POST">
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <textarea rows="4" cols="50" name="comment" required>
+            </textarea>
+            <button class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Submit</button>
+        </form>
+    </div>
+</article>
+{{ end }}

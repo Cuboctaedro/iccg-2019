@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section>
+    <header>
+        <h1 itemprop="name">{{.Title}}</h1>
+    </header>
+    <ul itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList">
+    {{ range .Data.Pages }}
+        <li>
+            <section itemprop="itemListElement" itemscope itemtype="https://schema.org/Event">
+                <header>
+                    <h2 itemprop="name">
+                        <a href="{{ .Permalink }}" itemprop="url">{{.Title}}</a>
+                    </h2>
+                        <time itemprop="doorTime">{{ dateFormat "Monday, Jan 2, 2006" .Params.eventdate }}</time>
+                    <div >
+                        <span class="label">Participants:</span>
+                        {{ .Params.participants }}
+                    </div>
+                </header>
+                <div itemprop="about">
+                    <h3>{{ .Params.trip_title }}</h3>
+                    <div>{{ .Content }}</div>
+                </div>
+                <div>
+                    <span class="label">Place of Discussion:</span>
+                    {{ .Params.location }}
+                </div>
+            </section>
+        </li>
+    {{ end }}
+    </ul>
+</section>
+{{ end }}

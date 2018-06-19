@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="single">
+    <header>
+        <h1 itemprop="name">{{ .Title }}</h1>
+    </header>
+    <div itemprop="description">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

@@ -1,0 +1,12 @@
+baseURL: 
+footnoteReturnLinkContents: ↩
+permalinks:
+  blog: /:title/
+title: ICCG 2019
+buildDrafts: false
+canonifyURLs: false
+disableKinds: 
+  - taxonomy
+  - taxonomyTerm
+params:
+  description: "Conflict, War and Uneven Development: De- and Re-constructions of space"

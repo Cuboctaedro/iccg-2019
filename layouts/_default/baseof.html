@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ "assets/styles.css" | absURL }}">
+    <meta name="robots" content="index, follow" />
+
+    <link rel="shortcut icon" href="">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="ff-text c-black bg-white fs-16 lh-15 d-flex ai-stretch min-h-screen-h">
+
+    <p class="visually-hidden"><a href="#main">skip to main content</a></p>
+    <p class="visually-hidden"><a href="#nav">skip to main navigation</a></p>
+    <header class="w-30 bg-black c-white p-2 mr-3">
+        <p class="fw-700 fs-72 lh-10">
+            <a href="{{ .Site.BaseURL }}" class="c-white">{{ .Site.Title }}</a>
+        </p>
+        <p class="mb-3">{{ .Site.Params.description }}</p>
+        {{ partial "menu.html" . }}
+    </header>
+
+    <main id="main">
+    {{ block "main" . }}
+    {{ end }}
+    </main>
+    <script src="{{ "assets/scripts.js" | absURL }}" async defer></script>
+</body>
+</html>
