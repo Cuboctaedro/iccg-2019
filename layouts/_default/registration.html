@@ -14,10 +14,160 @@
             }
         </script>
         <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/9993b0df2c87" enctype="multipart/form-data" method="POST">
-            <label for="email-address">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            <textarea rows="4" cols="50" name="comment" required>
-            </textarea>
+            <section>
+                <h2>Personal Information</h2>
+
+                <label for="first-name">First Name</label>
+                <input id="first-name" type="text" name="first-name" aria-describedby="error-message-1" required>
+                <div id="error-message-1" class="visually-hidden">This field is required.</div>
+
+                <label for="last-name">Last Name</label>
+                <input id="last-name" type="text" name="last-name" aria-describedby="error-message-2" required>
+                <div id="error-message-2" class="visually-hidden">This field is required.</div>
+
+                <label for="nationality">Nationality</label>
+                <input id="nationality" type="text" name="nationality" aria-describedby="error-message-3" required>
+                <div id="error-message-3" class="visually-hidden">This field is required.</div>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" aria-describedby="error-message-4" required>
+                <div id="error-message-4" class="visually-hidden">This field is required.</div>
+
+                <label for="tel">Phone</label>
+                <input id="tel" type="tel" name="tel">
+
+                <fieldset>
+
+                    <legend>Institutional Affiliation</legend>
+                    <label for="title">Title</label>
+                    <input id="title" type="text" name="title">
+                    <label for="position">Position</label>
+                    <input id="position" type="text" name="position">
+
+                </fieldset>
+
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"></textarea>
+
+            </section>
+            <section>
+                <h2>Conference Theme</h2>
+                <fieldset>
+                    <legend>What is the best time of day?</legend>
+                    <div class="radio row">
+
+                        <input type="radio" name="fascism" id="fascism" value="Rise of fascism"/>
+                        <label for="fascism">Rise of fascism, nationalism and authoritarianism</label>
+
+                        <input type="radio" name="migration" id="migration" value="Migration and global mobility"/>
+                        <label for="migration">Migration and global mobility control</label>
+
+                        <input type="radio" name="feminism" id="feminism" value="Geographies of radical feminism"/>
+                        <label for="feminism">Geographies of radical feminism</label>
+
+                        <input type="radio" name="climate" id="climate" value="Conflicts and climate change"/>
+                        <label for="climate">Socioenvironmental conflicts and climate change</label>
+
+                        <input type="radio" name="reproduction" id="reproduction" value="Social reproduction"/>
+                        <label for="reproduction">Social reproduction</label>
+
+                        <input type="radio" name="conflicts" id="conflicts" value="Urban conflicts"/>
+                        <label for="conflicts">Urban conflicts</label>
+
+                        <input type="radio" name="solidarity" id="solidarity" value="Solidarity and Social Movements"/>
+                        <label for="solidarity">Solidarity and Social Movements</label>
+
+                        <input type="radio" name="territories" id="territories" value="Territories and lives in war"/>
+                        <label for="territories">Territories and lives in war</label>
+
+                        <input type="radio" name="austerity" id="austerity" value="Austerity Governance"/>
+                        <label for="austerity">Austerity Governance </label>
+
+                        <input type="radio" name="uneven" id="uneven" value="Uneven development geographies"/>
+                        <label for="uneven">Uneven development geographies</label>
+
+                        <input type="radio" name="subjectivities" id="subjectivities" value="Precarity, marginality and new subjectivities"/>
+                        <label for="subjectivities">Precarity, marginality and new subjectivities</label>
+
+                    </div>
+    
+                </fieldset>
+                    
+            </section>
+            <section>
+                <h2>1st co-author</h2>
+
+                <label for="first-name-co-1">First Name</label>
+                <input id="first-name-co-1" type="text" name="first-name-co-1" aria-describedby="error-message-1-co-1" required>
+                <div id="error-message-1-co-1" class="visually-hidden">This field is required.</div>
+
+                <label for="last-name-co-1">Last Name</label>
+                <input id="last-name-co-1" type="text" name="last-name-co-1" aria-describedby="error-message-2-co-1" required>
+                <div id="error-message-2-co-1" class="visually-hidden">This field is required.</div>
+
+                <label for="nationality-co-1">Nationality</label>
+                <input id="nationality-co-1" type="text" name="nationality-co-1" aria-describedby="error-message-3-co-1" required>
+                <div id="error-message-3-co-1" class="visually-hidden">This field is required.</div>
+
+                <label for="email-co-1">Email</label>
+                <input id="email-co-1" type="email" name="email-co-1" aria-describedby="error-message-4-co-1" required>
+                <div id="error-message-4-co-1" class="visually-hidden">This field is required.</div>
+
+                <label for="tel-co-1">Phone</label>
+                <input id="tel-co-1" type="tel" name="tel-co-1">
+
+                <fieldset>
+
+                    <legend>Institutional Affiliation</legend>
+                    <label for="title-co-1">Title</label>
+                    <input id="title-co-1" type="text" name="title-co-1">
+                    <label for="position-co-1">Position</label>
+                    <input id="position-co-1" type="text" name="position-co-1">
+
+                </fieldset>
+
+                <label for="bio-co-1">Bio</label>
+                <textarea id="bio-co-1" name="bio-co-1"></textarea>
+
+            </section>
+            <section>
+                <h2>2nd co-author</h2>
+
+                <label for="first-name-co-2">First Name</label>
+                <input id="first-name-co-2" type="text" name="first-name-co-2" aria-describedby="error-message-1-co-2" required>
+                <div id="error-message-1-co-2" class="visually-hidden">This field is required.</div>
+
+                <label for="last-name-co-2">Last Name</label>
+                <input id="last-name-co-2" type="text" name="last-name-co-2" aria-describedby="error-message-2-co-2" required>
+                <div id="error-message-2-co-2" class="visually-hidden">This field is required.</div>
+
+                <label for="nationality-co-2">Nationality</label>
+                <input id="nationality-co-2" type="text" name="nationality-co-2" aria-describedby="error-message-3-co-2" required>
+                <div id="error-message-3-co-2" class="visually-hidden">This field is required.</div>
+
+                <label for="email-co-2">Email</label>
+                <input id="email-co-2" type="email" name="email-co-2" aria-describedby="error-message-4-co-2" required>
+                <div id="error-message-4-co-2" class="visually-hidden">This field is required.</div>
+
+                <label for="tel-co-2">Phone</label>
+                <input id="tel-co-2" type="tel" name="tel-co-2">
+
+                <fieldset>
+
+                    <legend>Institutional Affiliation</legend>
+                    <label for="title-co-2">Title</label>
+                    <input id="title-co-2" type="text" name="title-co-2">
+                    <label for="position-co-2">Position</label>
+                    <input id="position-co-2" type="text" name="position-co-2">
+
+                </fieldset>
+
+                <label for="bio-co-2">Bio</label>
+                <textarea id="bio-co-2" name="bio-co-2"></textarea>
+
+            </section>
+
+
             <button class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Submit</button>
         </form>
     </div>
