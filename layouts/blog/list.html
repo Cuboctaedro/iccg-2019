@@ -1,22 +1,13 @@
 {{ define "main" }}
 <section>
-    <header>
-        <h1 itemprop="name">{{.Title}}</h1>
+    <header class="visually-hidden">
+        <h1 itemprop="name" >{{.Title}}</h1>
     </header>
     <ul itemprop="mainEntity" itemscope itemtype="https://schema.org/Blog">
-    {{ range .Data.Pages }}
-        <li>
-            <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-                <header>
-                    <h2 itemprop="headline">
-                        <a href="{{.Permalink}}" itemprop="url">{{.Title}}</a>
-                    </h2>
-                    <time itemprop="datePublished">{{.Date.Format "2006-01-02"}}</time>
-                </header>
-                <div itemprop="description">{{ .Content  | truncate 100 }}</div>
-            </article>
-        </li>
-    {{ end }}
+        {{ partial "blog.html" . }}
     </ul>
-</section>
+ </section>
 {{ end }}
+
+
+

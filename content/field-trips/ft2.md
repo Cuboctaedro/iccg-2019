@@ -1,0 +1,9 @@
+---
+title: "FT2: Exarcheia-A. Panteleimonas-Victoria Square-Pedion Areos"
+eventdate: "2019-04-21T11:00:00"
+participants: "2 parallel groups of 25 participants each"
+trip_title: "Movements and countermovements"
+location: "National Technical University (NTUA)"
+layout: fieldtrip
+---
+Both within and prior to the emergence of the ongoing crisis, numerous social movements have developed in central Athens and have engaged with differentiated urban, social and environmental issues. Through a range of interventions and structures, social movements produced spaces that challenge dominant social and economic relations and constitute paradigms of alternative socio-spatial territories. Moreover, social movements confronted institutional and unofficial racist and xenophobic practices in solidarity with immigrants and refugees, while, within the frame of the refugee crisis, offered an alternative to state-driven hospitality structures through initiatives that promote integration with local communities. Additionally, in numerous cases, social movements encounter the criminal side of capitalism, namely offensive and violent groups engaged in drug-dealing and other criminal activities that have created exclusionary conditions in urban public space on the level of everyday life. This field trip in neighborhoods in central Athens will allow participants to familiarize and engage with the social movements’ landscape through the interaction with local practices and initiatives and the visit to public spaces and venues within which alternative socio-spatial practices and relations are developed.   

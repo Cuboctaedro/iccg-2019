@@ -44,7 +44,8 @@
 
             @each $key, $value in map-get($settings, 'values') {
 
-                .#{map-get($settings, 'classname')}#{$key}#{$global-hover-identifier}:hover {
+                .#{map-get($settings, 'classname')}#{$key}#{$global-hover-identifier}:hover,
+                .#{map-get($settings, 'classname')}#{$key}#{$global-hover-identifier}:focus {
                     #{$property}: rem($value);
                 }
             
@@ -54,7 +55,8 @@
 
             @each $key, $value in map-get($settings, 'values') {
 
-                .#{$global-hover-identifier}#{map-get($settings, 'classname')}#{$key}:hover {
+                .#{$global-hover-identifier}#{map-get($settings, 'classname')}#{$key}:hover,
+                .#{$global-hover-identifier}#{map-get($settings, 'classname')}#{$key}:focus {
                     #{$property}: rem($value);
                 }
             

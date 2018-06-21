@@ -1,28 +1,16 @@
 {{ define "main" }}
-<section>
-    <div>
+<section class="pl-6 pr-6 pb-9 pt-6 bob-s-dotted bob-w-2">
+    <div class="fs-24 lh-5 w-1of2">
         {{ .Content }}
     </div>
 </section>
 {{ with .Site.GetPage "section" "blog" }}
 <section>
-    <header>
+    <header class="visually-hidden">
         <h2>{{.Title}}</h2>
     </header>
     <ul>
-    {{ range .Data.Pages }}
-        <li>
-            <article>
-                <header>
-                    <h3>
-                        <a href="{{.Permalink}}">{{.Title}}</a>
-                    </h3>
-                    <time>{{.Date.Format "2006-01-02"}}</time>
-                </header>
-                <div>{{ .Content  | truncate 100 }}</div>
-            </article>
-        </li>
-    {{ end }}
+        {{ partial "blog.html" . }}
     </ul>
 {{ end }}
 </section>

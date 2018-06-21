@@ -1,9 +1,9 @@
 <nav role="navigation" aria-label="Main navigation" id="nav">
-    <ul class="bot-s-solid bot-c-gray" >
+    <ul class="d-flex pr-6 w-full jc-end" >
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }} bob-s-solid bob-c-gray">
-                <a href="{{ .URL }}" class="d-block pt-1 pb-1 c-white h__c-red">
+            <li>
+                <a href="{{ .URL }}" class="d-block tt-upper ls-loose lh-4 p-1 {{ if eq $currentPage.URL .URL }}c-white{{else}}c-main{{ end }}">
                     <span>{{ .Name }}</span>
                 </a>
             </li>

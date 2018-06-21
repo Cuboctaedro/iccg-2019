@@ -17,7 +17,8 @@
     },
     "scripts": {
         "serve": "php -S localhost:1234 -t public/",
-        "dev": "webpack --config webpack.dev.js",
-        "prod": "webpack --config webpack.prod.js"
+        "js": "webpack --config webpack.dev.js",
+        "css" : "node-sass --include-path src/css src/css/style.scss static/assets/styles.css",
+        "prod": "webpack --config webpack.prod.js && node-sass --include-path src/css src/css/style.scss static/assets/styles.css --output-style compressed"
     }
 }

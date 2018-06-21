@@ -1,0 +1,28 @@
+<nav class="breadcrumbs w-full h-5 pl-6 pr-4 fs-12 tt-upper lh-4 pb-1 bob-s-dotted bob-w-2">
+    <ul class="d-flex fx-d-row">
+        {{ with .Site.GetPage "home" "" }}
+        <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+        {{ end }}
+        {{ if eq .Type "blog" }}
+            {{ if eq .Kind "section" }}
+                <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+            {{ else }}
+                {{ with .Site.GetPage "section" "blog" }}
+                    <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+                {{ end }}
+                <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+            {{ end }}
+        {{ else if eq .Type "field-trips" }}
+            {{ if eq .Kind "section" }}
+                <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+            {{ else }}
+                {{ with .Site.GetPage "section" "field-trips" }}
+                    <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+                {{ end }}
+                <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+            {{ end }}
+        {{ else }}
+            <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</nav>

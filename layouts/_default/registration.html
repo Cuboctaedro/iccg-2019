@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article>
-    <header>
-        <h1>{{ .Title }}</h1>
+    <header class="pl-6 pr-6 pb-9 pt-6">
+        <h1 itemprop="name" class="fs-30 lh-4 fw-900 tt-upper ls-loose mb-3 c-white animate">Registration Form</h1>
     </header>
     <div>
         {{ .Content }}
@@ -13,162 +13,180 @@
                 document.getElementById("invisible-recaptcha-form").submit();
             }
         </script>
-        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/9993b0df2c87" enctype="multipart/form-data" method="POST">
-            <section>
-                <h2>Personal Information</h2>
+        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/9993b0df2c87" enctype="multipart/form-data" method="POST" class="pb-3">
 
-                <label for="first-name">First Name</label>
-                <input id="first-name" type="text" name="first-name" aria-describedby="error-message-1" required>
-                <div id="error-message-1" class="visually-hidden">This field is required.</div>
 
-                <label for="last-name">Last Name</label>
-                <input id="last-name" type="text" name="last-name" aria-describedby="error-message-2" required>
-                <div id="error-message-2" class="visually-hidden">This field is required.</div>
+            <div class="d-flex pl-6 pr-6 pb-9 pt-6">
 
-                <label for="nationality">Nationality</label>
-                <input id="nationality" type="text" name="nationality" aria-describedby="error-message-3" required>
-                <div id="error-message-3" class="visually-hidden">This field is required.</div>
-
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" aria-describedby="error-message-4" required>
-                <div id="error-message-4" class="visually-hidden">This field is required.</div>
-
-                <label for="tel">Phone</label>
-                <input id="tel" type="tel" name="tel">
-
-                <fieldset>
-
-                    <legend>Institutional Affiliation</legend>
-                    <label for="title">Title</label>
-                    <input id="title" type="text" name="title">
-                    <label for="position">Position</label>
-                    <input id="position" type="text" name="position">
-
-                </fieldset>
-
-                <label for="bio">Bio</label>
-                <textarea id="bio" name="bio"></textarea>
-
-            </section>
-            <section>
-                <h2>Conference Theme</h2>
-                <fieldset>
-                    <legend>What is the best time of day?</legend>
-                    <div class="radio row">
-
-                        <input type="radio" name="fascism" id="fascism" value="Rise of fascism"/>
-                        <label for="fascism">Rise of fascism, nationalism and authoritarianism</label>
-
-                        <input type="radio" name="migration" id="migration" value="Migration and global mobility"/>
-                        <label for="migration">Migration and global mobility control</label>
-
-                        <input type="radio" name="feminism" id="feminism" value="Geographies of radical feminism"/>
-                        <label for="feminism">Geographies of radical feminism</label>
-
-                        <input type="radio" name="climate" id="climate" value="Conflicts and climate change"/>
-                        <label for="climate">Socioenvironmental conflicts and climate change</label>
-
-                        <input type="radio" name="reproduction" id="reproduction" value="Social reproduction"/>
-                        <label for="reproduction">Social reproduction</label>
-
-                        <input type="radio" name="conflicts" id="conflicts" value="Urban conflicts"/>
-                        <label for="conflicts">Urban conflicts</label>
-
-                        <input type="radio" name="solidarity" id="solidarity" value="Solidarity and Social Movements"/>
-                        <label for="solidarity">Solidarity and Social Movements</label>
-
-                        <input type="radio" name="territories" id="territories" value="Territories and lives in war"/>
-                        <label for="territories">Territories and lives in war</label>
-
-                        <input type="radio" name="austerity" id="austerity" value="Austerity Governance"/>
-                        <label for="austerity">Austerity Governance </label>
-
-                        <input type="radio" name="uneven" id="uneven" value="Uneven development geographies"/>
-                        <label for="uneven">Uneven development geographies</label>
-
-                        <input type="radio" name="subjectivities" id="subjectivities" value="Precarity, marginality and new subjectivities"/>
-                        <label for="subjectivities">Precarity, marginality and new subjectivities</label>
-
+                <section class="w-1of2 pr-6 bor-s-dotted bor-w-2">
+                    <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">Personal Information</h2>
+            
+                    <div class="d-flex">
+                        <div class="w-1of2 pr-3 mb-6">
+                            <label for="first-name" class="fs-16 fw-700 lh-3">First Name</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="first-name" type="text" name="first-name" aria-describedby="error-message-1" required>
+                            <div id="error-message-1" class="visually-hidden">This field is required.</div>
+                        </div>
+                        <div class="w-1of2 pl-3 mb-6">
+                            <label for="last-name" class="fs-16 fw-700 lh-3">Last Name</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="last-name" type="text" name="last-name" aria-describedby="error-message-2" required>
+                            <div id="error-message-2" class="visually-hidden">This field is required.</div>
+                        </div>
                     </div>
+
+                    <div class="w-1of2 pr-3 mb-6">
+                        <label for="nationality" class="fs-16 fw-700 lh-3">Nationality</label>
+                        <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="nationality" type="text" name="nationality">
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="w-1of2 pr-3 mb-6">
+                            <label for="email" class="fs-16 fw-700 lh-3">Email</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="email" type="email" name="email" aria-describedby="error-message-4" required>
+                            <div id="error-message-4" class="visually-hidden">This field is required.</div>
+                        </div>
+                        <div class="w-1of2 pl-3 mb-6">
+                            <label for="tel" class="fs-16 fw-700 lh-3">Phone</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="tel" type="tel" name="tel">
+                        </div>
+                    </div>
+
+                    <fieldset class="mb-6">
+                        <legend class="fw-700 tt-upper ls-loose d-block mb-3 c-white">Institutional Affiliation</legend>
+                        <div class="d-flex">
+                            <div class="w-1of2 pr-3">
+                                <label for="title" class="fs-16 fw-700 lh-3">Title</label>
+                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="title" type="text" name="title">
+                            </div>
+                            <div class="w-1of2 pl-3">
+                                <label for="position" class="fs-16 fw-700 lh-3">Position</label>
+                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="position" type="text" name="position">
+                            </div>
+                        </div>
+                    </fieldset>
     
-                </fieldset>
-                    
-            </section>
-            <section>
-                <h2>1st co-author</h2>
+                    <label for="bio" class="fs-16 fw-700 lh-3">Bio</label>
+                    <textarea class="p-1 w-full h-25 input lh-3" id="bio" name="bio"></textarea>
+            
+                </section>
 
-                <label for="first-name-co-1">First Name</label>
-                <input id="first-name-co-1" type="text" name="first-name-co-1" aria-describedby="error-message-1-co-1" required>
-                <div id="error-message-1-co-1" class="visually-hidden">This field is required.</div>
+                <section class="w-1of2 pl-6">
+                    <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">Conference Theme</h2>
+                    <fieldset class="mb-6">
+                        <legend class=" fw-700 tt-upper ls-loose d-block mb-3 c-white">Choose your theme</legend>
+                        <div>
+                            {{ range .Site.Data.themes.themes }}
+                                {{partial "radio.html" .}}
+                            {{end}}
+                        </div>
+                    </fieldset>
+                </section>
+                
+            </div>
 
-                <label for="last-name-co-1">Last Name</label>
-                <input id="last-name-co-1" type="text" name="last-name-co-1" aria-describedby="error-message-2-co-1" required>
-                <div id="error-message-2-co-1" class="visually-hidden">This field is required.</div>
+            <div class="d-flex pl-6 pr-6 pb-9 pt-6">
 
-                <label for="nationality-co-1">Nationality</label>
-                <input id="nationality-co-1" type="text" name="nationality-co-1" aria-describedby="error-message-3-co-1" required>
-                <div id="error-message-3-co-1" class="visually-hidden">This field is required.</div>
+                <section class="w-1of2 pr-6 bor-s-dotted bor-w-2">
+                    <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">1st co-author</h2>
+            
+                    <div class="d-flex">
+                        <div class="w-1of2 pr-3 mb-6">
+                            <label for="first-name-co-a-1" class="fs-16 fw-700 lh-3">First Name</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="first-name-co-a-1" type="text" name="first-name-co-a-1" >
+                        </div>
+                        <div class="w-1of2 pl-3 mb-6">
+                            <label for="last-name-co-a-1" class="fs-16 fw-700 lh-3">Last Name</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="last-name-co-a-1" type="text" name="last-name-co-a-1">
+                        </div>
+                    </div>
 
-                <label for="email-co-1">Email</label>
-                <input id="email-co-1" type="email" name="email-co-1" aria-describedby="error-message-4-co-1" required>
-                <div id="error-message-4-co-1" class="visually-hidden">This field is required.</div>
+                    <div class="w-1of2 pr-3 mb-6">
+                        <label for="nationality-co-a-1" class="fs-16 fw-700 lh-3">Nationality</label>
+                        <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="nationality-co-a-1" type="text" name="nationality-co-a-1">
+                    </div>
 
-                <label for="tel-co-1">Phone</label>
-                <input id="tel-co-1" type="tel" name="tel-co-1">
+                    <div class="d-flex">
+                        <div class="w-1of2 pr-3 mb-6">
+                            <label for="email-co-a-1" class="fs-16 fw-700 lh-3">Email</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="email-co-a-1" type="email" name="email-co-a-1" >
+                        </div>
+                        <div class="w-1of2 pl-3 mb-6">
+                            <label for="tel-co-a-1" class="fs-16 fw-700 lh-3">Phone</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="tel-co-a-1" type="tel" name="tel-co-a-1">
+                        </div>
+                    </div>
 
-                <fieldset>
+                    <fieldset class="mb-6">
+                        <legend class="fw-700 tt-upper ls-loose d-block mb-3 c-white">Institutional Affiliation</legend>
+                        <div class="d-flex">
+                            <div class="w-1of2 pr-3">
+                                <label for="title-co-a-1" class="fs-16 fw-700 lh-3">Title</label>
+                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="title-co-a-1" type="text" name="title-co-a-1">
+                            </div>
+                            <div class="w-1of2 pl-3">
+                                <label for="position-co-a-1" class="fs-16 fw-700 lh-3">Position</label>
+                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="position-co-a-1" type="text" name="position-co-a-1">
+                            </div>
+                        </div>
+                    </fieldset>
 
-                    <legend>Institutional Affiliation</legend>
-                    <label for="title-co-1">Title</label>
-                    <input id="title-co-1" type="text" name="title-co-1">
-                    <label for="position-co-1">Position</label>
-                    <input id="position-co-1" type="text" name="position-co-1">
+                    <label for="bio-co-a-1" class="fs-16 fw-700 lh-3">Bio</label>
+                    <textarea class="p-1 w-full h-25 input lh-3" id="bio-co-a-1" name="bio-co-a-1"></textarea>
 
-                </fieldset>
+                </section>
 
-                <label for="bio-co-1">Bio</label>
-                <textarea id="bio-co-1" name="bio-co-1"></textarea>
+                <section class="w-1of2 pl-6 ">
+                    <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">2nd co-author</h2>
+            
+                    <div class="d-flex">
+                        <div class="w-1of2 pr-3 mb-6">
+                            <label for="first-name-co-a-2" class="fs-16 fw-700 lh-3">First Name</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="first-name-co-a-2" type="text" name="first-name-co-a-2" >
+                        </div>
+                        <div class="w-1of2 pl-3 mb-6">
+                            <label for="last-name-co-a-2" class="fs-16 fw-700 lh-3">Last Name</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="last-name-co-a-2" type="text" name="last-name-co-a-2">
+                        </div>
+                    </div>
 
-            </section>
-            <section>
-                <h2>2nd co-author</h2>
+                    <div class="w-1of2 pr-3 mb-6">
+                        <label for="nationality-co-a-2" class="fs-16 fw-700 lh-3">Nationality</label>
+                        <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="nationality-co-a-2" type="text" name="nationality-co-a-2">
+                    </div>
 
-                <label for="first-name-co-2">First Name</label>
-                <input id="first-name-co-2" type="text" name="first-name-co-2" aria-describedby="error-message-1-co-2" required>
-                <div id="error-message-1-co-2" class="visually-hidden">This field is required.</div>
+                    <div class="d-flex">
+                        <div class="w-1of2 pr-3 mb-6">
+                            <label for="email-co-a-1" class="fs-16 fw-700 lh-3">Email</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="email-co-a-1" type="email" name="email-co-a-1" >
+                        </div>
+                        <div class="w-1of2 pl-3 mb-6">
+                            <label for="tel-co-a-2" class="fs-16 fw-700 lh-3">Phone</label>
+                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="tel-co-a-2" type="tel" name="tel-co-a-2">
+                        </div>
+                    </div>
 
-                <label for="last-name-co-2">Last Name</label>
-                <input id="last-name-co-2" type="text" name="last-name-co-2" aria-describedby="error-message-2-co-2" required>
-                <div id="error-message-2-co-2" class="visually-hidden">This field is required.</div>
+                    <fieldset class="mb-6">
+                        <legend class="fw-700 tt-upper ls-loose d-block mb-3 c-white">Institutional Affiliation</legend>
+                        <div class="d-flex">
+                            <div class="w-1of2 pr-3">
+                                <label for="title-co-a-2" class="fs-16 fw-700 lh-3">Title</label>
+                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="title-co-a-2" type="text" name="title-co-a-2">
+                            </div>
+                            <div class="w-1of2 pl-3">
+                                <label for="position-co-a-2" class="fs-16 fw-700 lh-3">Position</label>
+                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="position-co-a-2" type="text" name="position-co-a-2">
+                            </div>
+                        </div>
+                    </fieldset>
 
-                <label for="nationality-co-2">Nationality</label>
-                <input id="nationality-co-2" type="text" name="nationality-co-2" aria-describedby="error-message-3-co-2" required>
-                <div id="error-message-3-co-2" class="visually-hidden">This field is required.</div>
+                    <label for="bio-co-a-2" class="fs-16 fw-700 lh-3">Bio</label>
+                    <textarea class="p-1 w-full h-25 input lh-3" id="bio-co-a-2" name="bio-co-a-2"></textarea>
 
-                <label for="email-co-2">Email</label>
-                <input id="email-co-2" type="email" name="email-co-2" aria-describedby="error-message-4-co-2" required>
-                <div id="error-message-4-co-2" class="visually-hidden">This field is required.</div>
+                </section>
+            </div>
 
-                <label for="tel-co-2">Phone</label>
-                <input id="tel-co-2" type="tel" name="tel-co-2">
+            <button class="mb-6 mr-auto ml-auto g-recaptcha h-5 lh-4 ta-center bo-w-2 bo-s-solid pl-3 pr-3 tt-upper ls-loose fs-18 fw-700 h__bg-black h__c-white h__bo-c-black animate" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline" style="cursor:pointer;"s>Submit</button>
 
-                <fieldset>
-
-                    <legend>Institutional Affiliation</legend>
-                    <label for="title-co-2">Title</label>
-                    <input id="title-co-2" type="text" name="title-co-2">
-                    <label for="position-co-2">Position</label>
-                    <input id="position-co-2" type="text" name="position-co-2">
-
-                </fieldset>
-
-                <label for="bio-co-2">Bio</label>
-                <textarea id="bio-co-2" name="bio-co-2"></textarea>
-
-            </section>
-
-
-            <button class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Submit</button>
         </form>
     </div>
 </article>

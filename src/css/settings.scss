@@ -22,11 +22,13 @@ $global-hover-identifier       : 'h__' ;
 
 // Colors
 $global-color-values: (
-    'white'         : #f1f1f1,
-    'black'         : #222,
-    'gray'          : #aaa,
-    'red'           : #FF4136,
+    'white'         : #F6F0D6,
+    'black'         : #302D30,
+    'main'          : #749799,
+    'gray'          : #453042,
+    'red'           : #B07F78,
     'green'         : #3D9970,
+    'yellow'        : #C8AF8A,
     'transparent' : transparent
 );
 
@@ -281,7 +283,9 @@ $global-border-left-style-settings: (
 $global-border-width-values: (
     '0'       : 0,
     '1'       : 1px,
-    '2 '      : 2px,
+    '2'       : 2px,
+    '4'       : 4px,
+    '8'       : 8px,
 );
 
 $global-border-width-settings: (
@@ -523,12 +527,9 @@ $global-font-family-settings: (
     'hover'      : false,
     'classname'  : 'ff-',
     'values': (
-        'text'  : unquote('Rubik, Arial, sans-serif'),
-        'title' : unquote('Rubik, sans-serif'),
-        'mono'  : unquote("'Courier New', Courier, monospace"),
+        'sans' : unquote('niveau-grotesk, "Helvetica Neue", Helvetica, Arial, sans-serif'),
     )
 );
-
 /*  =========================================================================
     FONT SIZE
     ========================================================================= */
@@ -664,13 +665,13 @@ $global-line-height-settings: (
     'hover'      : false,
     'classname'  : 'lh-',
     'values': (
-        '10': 1,
-        '12': 1.2,
-        '14': 1.4,
-        '15': 1.5,
-        '16': 1.6,
-        '18': 1.8,
-        '20': 2
+        '2': 16px,
+        '3': 24px,
+        '4': 32px,
+        '5': 40px,
+        '6': 48px,
+        '7': 56px,
+        '8': 64px
     )
 );
 

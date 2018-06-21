@@ -1,33 +1,38 @@
 {{ define "main" }}
 <section>
-    <header>
+    <header class="visually-hidden">
         <h1 itemprop="name">{{.Title}}</h1>
     </header>
     <ul itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList">
     {{ range .Data.Pages }}
         <li>
-            <section itemprop="itemListElement" itemscope itemtype="https://schema.org/Event">
-                <header>
-                    <h2 itemprop="name">
-                        <a href="{{ .Permalink }}" itemprop="url">{{.Title}}</a>
-                    </h2>
-                        <time itemprop="doorTime">{{ dateFormat "Monday, Jan 2, 2006" .Params.eventdate }}</time>
-                    <div >
-                        <span class="label">Participants:</span>
-                        {{ .Params.participants }}
-                    </div>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Event" class="">
+                <a href="{{ .URL }}" class="hoverblock animate d-block pl-6 pr-6 pb-9 pt-6 bob-s-dotted bob-w-2">
+                <header class="mb-3">
+                    <h2 itemprop="name" class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose animate">{{ .Title }}</h2>
                 </header>
-                <div itemprop="about">
-                    <h3>{{ .Params.trip_title }}</h3>
-                    <div>{{ .Content }}</div>
+                <div class="d-flex">
+                    <div itemprop="about" class="w-1of2 pr-3 bor-w-1 bor-s-solid">
+                        <h3 class="fs-30 lh-4 fw-900 tt-upper ls-loose mb-3 c-white animate">{{ .Params.trip_title }}</h3>
+                        <div class="content max-w-75">{{ .Content  | truncate 200 }}</div>
+                    </div>
+                    <aside class="pl-3 w-1of2">
+                        <time itemprop="doorTime" class="fw-900 tt-upper ls-loose d-block mb-2 c-white animate">{{ dateFormat "Monday, Jan 2, 2006" .Params.eventdate }}</time>
+                        <div>
+                            <span class="fw-900 d-block">Participants:</span>
+                            {{ .Params.participants }}
+                            <span class="fw-900 d-block">Place of Discussion:</span>
+                            {{ .Params.location }}
+                    
+                        </div>
+                    </aside>
                 </div>
-                <div>
-                    <span class="label">Place of Discussion:</span>
-                    {{ .Params.location }}
-                </div>
-            </section>
+            </a>
+            </article>
         </li>
     {{ end }}
     </ul>
 </section>
 {{ end }}
+
+

@@ -8,28 +8,56 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    <link rel="stylesheet" href="https://use.typekit.net/xwr6fly.css">
+
+
 
     <link rel="stylesheet" href="{{ "assets/styles.css" | absURL }}">
     <meta name="robots" content="index, follow" />
 
     <link rel="shortcut icon" href="">
 </head>
-<body itemscope itemtype="http://schema.org/WebPage" class="ff-text c-black bg-white fs-16 lh-15 d-flex ai-stretch min-h-screen-h">
+<body itemscope itemtype="http://schema.org/WebPage" class="ff-sans c-black bg-main fs-16 lh-3 min-h-screen-h">
 
     <p class="visually-hidden"><a href="#main">skip to main content</a></p>
     <p class="visually-hidden"><a href="#nav">skip to main navigation</a></p>
-    <header class="w-30 bg-black c-white p-2 mr-3">
-        <p class="fw-700 fs-72 lh-10">
-            <a href="{{ .Site.BaseURL }}" class="c-white">{{ .Site.Title }}</a>
-        </p>
-        <p class="mb-3">{{ .Site.Params.description }}</p>
+
+    {{ if eq .IsHome false }}
+    <header class="w-full bg-black c-main d-flex jc-between">
+        <a href="{{ .Site.BaseURL }}" class="c-main d-in-bl p-1 pl-6 fw-900 fs-30 lh-4">{{ .Site.Title }}</a>
         {{ partial "menu.html" . }}
     </header>
-
-    <main id="main" class="max-w-75 pt-2">
-    {{ block "main" . }}
+    {{ else }}
+    <header class="w-full bg-black c-main">
+        <div class="w-full">
+            {{ partial "menu.html" . }}
+        </div>
+        <div class="c-main d-in-bl pt-3 pl-6 ">
+            <p class="fw-900 fs-30 lh-4 pb-3">
+                8th<br/>
+                International<br/>
+                Conference of<br/>
+                Critical<br/>
+                Geography<br/>
+                2019<br/>
+            </p>
+            <p class="fst-italic pb-3">
+                Conflict, War and Uneven Development:<br/>
+                De- and Re-constructions of space
+            </p>
+        </div>
+        
+    </header>
     {{ end }}
+
+    <main id="main" class="w-full">
+        {{ if eq .IsHome false }}
+            {{ partial "breadcrumbs.html" . }}
+        {{ end }}
+        {{ block "main" . }}
+        {{ end }}
     </main>
     <script src="{{ "assets/scripts.js" | absURL }}" async defer></script>
     <script>

@@ -1,0 +1,17 @@
+{{ range .Data.Pages }}
+    <li>
+            <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+                <a href="{{ .URL }}" class="hoverblock animate d-block pl-6 pr-6 pb-9 pt-6 bob-s-dotted bob-w-2">
+                <div class="mb-3">
+                    <time itemprop="datePublished" class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose animate d-block">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</time>
+                </div>
+                <div class="d-flex">
+                    <div class="w-75 ">
+                        <h3 itemprop="headline" class="fs-30 lh-4 fw-900 tt-upper ls-loose mb-3 c-white animate">{{ .Title }}</h3>
+                        <div class="content">{{ .Content  | truncate 200 }}</div>
+                    </div>
+                </div>
+            </a>
+            </article>
+    </li>
+{{ end }}
