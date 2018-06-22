@@ -2,12 +2,14 @@
     GLOBAL
     ========================================================================= */
 $media-query-widths: (
+    'sm' : 26em,
     'md' : 42em,
     'lg' : 62em,
     'xl' : 70em
 );
 // Media queries
 $global-media-queries: (
+    'sm__': screen and (min-width: map-get($media-query-widths, 'sm')),
     'md__': screen and (min-width: map-get($media-query-widths, 'md')),
     'lg__': screen and (min-width: map-get($media-query-widths, 'lg')),
     'xl__': screen and (min-width: map-get($media-query-widths, 'xl'))
@@ -22,13 +24,12 @@ $global-hover-identifier       : 'h__' ;
 
 // Colors
 $global-color-values: (
-    'white'         : #F6F0D6,
-    'black'         : #302D30,
-    'main'          : #749799,
-    'gray'          : #453042,
-    'red'           : #B07F78,
-    'green'         : #3D9970,
-    'yellow'        : #C8AF8A,
+    'white'         : #ffffff,
+    'black'         : #444444,
+    'main'          : #eeeeee,
+    'gray'          : #999999,
+    'red'           : #E03B24,
+    'green'         : #43996F,
     'transparent' : transparent
 );
 
@@ -527,7 +528,8 @@ $global-font-family-settings: (
     'hover'      : false,
     'classname'  : 'ff-',
     'values': (
-        'sans' : unquote('niveau-grotesk, "Helvetica Neue", Helvetica, Arial, sans-serif'),
+        'sans' : unquote('tablet-gothic, "Helvetica Neue", Helvetica, Arial, sans-serif'),
+        'serif' : unquote('abril-text, Georgia, serif'),
     )
 );
 /*  =========================================================================
@@ -593,6 +595,8 @@ $global-font-weight-settings: (
         '200'  : 200,
         '300'  : 300,
         '400'  : 400,
+        '500'  : 500,
+        '600'  : 600,
         '700'  : 700,
         '900'  : 900,
     )

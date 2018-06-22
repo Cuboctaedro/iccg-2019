@@ -1,13 +1,14 @@
 ---
 title: About
 draft: false
+menu: "main"
 ---
-## DATE & DURATION
+## Date & duration
 
 **Friday 19 - Tuesday 23 April 2019**
 This final option is the best case for a number of reasons. First of all, the proposed venue (School of Architecture of the National Technical University of Athens - NTUA) will be free of classes and available. Secondly, the dates include both the Catholic Easter (21 April 2019), and the first days of the Orthodox Easter Break for 2019. The weather is quite pleasant in late April, and participants will also be able to take advantage of a couple of extra days of Easter vacation at the end of the conference. Duration is 5 days, though the opening is only a half day, starting in the afternoon, to allow participants the morning to arrive and settle in. Both days of the weekend are included in order to help people who do not have semester session to come. We did not choose the option of June, as the atmosphere will be exhausting (especially during the fieldtrips) due to the heat, and at the same time, it will be a high touristic period with the prices of accommodation and travelling quite raised. 
 
-## LOCAL TEAM & VENUE
+## Local team & venue
 
 We consider it advantageous, for organisational and visibility reasons, as well as for attracting local participants, to associate the conference with the following higher education institutions in Athens: the National Technical University (NTUA), which includes the School of Architecture, an institution with important research and political contribution to urban issues; Harokopeio University (HUA), which is the main geography hub in Greece; the National Centre for Social Research (NCSR), which, apart from its scientific contribution, will also provide space for holding some of the conference sessions; and, finally, Panteion University of Social and Political Sciences (PUA), which will contributed to added publicity for the conference. 
 

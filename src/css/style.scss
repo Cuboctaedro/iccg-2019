@@ -67,7 +67,10 @@
 
 
 // 5. @extend and other styles
-
+html,
+body {
+    min-height:101%;
+}
 a {
     text-decoration: none;
     color: map-get($global-color-values, 'black');
@@ -105,33 +108,59 @@ a {
 }
 
 .content {
+    @extend .ff-serif, .fw-300 ;
     p {
         margin-bottom: rem(24px);
     }
     h2 {
-        @extend .fw-900 ;
-        font-size: 24px;
-        line-height:1;
+        @extend .fw-900, .ff-sans, .fs-24, .lh-4, .mb-3 ;
+    }
+    strong {
+        @extend .ff-sans, .fw-700 ;
     }
 }
 .input {
     @extend .bo-s-none, .bg-main, .bob-w-2, .bo-c-black, .bob-s-solid, .fs-16, .animate ;
     &:focus {
         background-color: map-get($global-color-values, 'white');
+        color: map-get($global-color-values, 'black');
 
     }
     &:disabled {
-        border-bottom-color: map-get($global-color-values, 'gray');
+        @extend .bo-c-gray ;
     }
+    &:focus:invalid {
+        @extend .bo-c-red ;
+    }
+    &:focus:valid {
+        @extend .bo-c-green ;
+    }
+    &:invalid {
+        @extend .c-red ;
+    }
+    &:valid {
+        @extend .c-green ;
+    }
+
+}
+.error-message {
+    opacity:0;
+}
+input:invalid + .error-message {
+    opacity:1;
+}
+input {
+    box-shadow: none !important;
 }
 
 .radio{
     color: map-get($global-color-values, 'black');
     font-size: rem(16px);
     position: relative;
+    padding-left: rem(32px);
     span {
         position:relative;
-        padding-left: rem(32px);
+        
     }
     span:after {
         content:'';
@@ -139,8 +168,8 @@ a {
         height: rem(16px);
         border: 2px solid;
         position: absolute;
-        left: 0;
-        top: 3px;
+        left: rem(-32px);
+        top: 4px;
         border-radius: 100%;
         -ms-border-radius: 100%;
         -moz-border-radius: 100%;
@@ -157,16 +186,16 @@ a {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
     }
     input[type="radio"]:checked + span {
-        color: map-get($global-color-values, 'white');
+        color: map-get($global-color-values, 'green');
     }
     input[type="radio"]:checked + span:before {
         content:'';
         width:6px;
         height:6px;
         position:absolute;
-        background-color: map-get($global-color-values, 'white');
-        left:5px;
-        top:8px;
+        background-color: map-get($global-color-values, 'green');
+        left:rem(-27px);
+        top:9px;
         border-radius:100%;
         -ms-border-radius:100%;
         -moz-border-radius:100%;
@@ -186,6 +215,40 @@ button {
         }
         .c-white {
             color: map-get($global-color-values, 'black');
+        }
+    }
+}
+.title-1 {
+    @extend .fs-24, .sm__fs-36, .lh-3, .sm__lh-4, .fw-900, .tt-upper, .ls-loose ;
+}
+.title-2 {
+    @extend .fw-700, .tt-upper, .fs-16 ;
+}
+.boxed {
+    @extend .bg-black, .c-main, .fs-16, .lh-4, .pl-1, .pr-1, .fw-700, .tt-upper, .ls-loose ;
+}
+
+#menulist li {
+    border-bottom: 1px solid map-get($global-color-values, 'main');
+}
+#menulist li:last-child {
+    border-bottom: none;
+}
+@media #{map-get($global-media-queries, 'lg__')} {
+    #menulist li {
+        border-bottom:none;
+    }
+}
+@media screen and (max-width: map-get($media-query-widths, 'lg')) {
+    #menulist {
+        opacity:0;
+        z-index:-1;
+        height:0;
+        &.show {
+            opacity:1;
+            z-index:10000;
+            height:auto;
+            box-shadow: map-get(map-get($global-box-shadow-settings, 'values'), '3');
         }
     }
 }

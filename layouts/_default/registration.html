@@ -1,9 +1,9 @@
 {{ define "main" }}
 <article>
-    <header class="pl-6 pr-6 pb-9 pt-6">
-        <h1 itemprop="name" class="fs-30 lh-4 fw-900 tt-upper ls-loose mb-3 c-white animate">Registration Form</h1>
+    <header class="p-6">
+        <h1 itemprop="name" class="fs-36 md__fs-48 lh-6 fw-900 c-red mb-3">Registration Form</h1>
     </header>
-    <div>
+    <div class="pl-6 pr-6 content w-full lg__w-1of2">
         {{ .Content }}
     </div>
     <div>
@@ -15,52 +15,69 @@
         </script>
         <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/9993b0df2c87" enctype="multipart/form-data" method="POST" class="pb-3">
 
+            <div class="d-flex fx-w-wrap">
 
-            <div class="d-flex pl-6 pr-6 pb-9 pt-6">
-
-                <section class="w-1of2 pr-6 bor-s-dotted bor-w-2">
+                <section class="w-full lg__w-1of2 p-6">
                     <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">Personal Information</h2>
             
-                    <div class="d-flex">
-                        <div class="w-1of2 pr-3 mb-6">
-                            <label for="first-name" class="fs-16 fw-700 lh-3">First Name</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="first-name" type="text" name="first-name" aria-describedby="error-message-1" required>
-                            <div id="error-message-1" class="visually-hidden">This field is required.</div>
+                    <div class="d-flex fx-w-wrap">
+                        <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                            {{ .Scratch.Set "label" "First Name" }}
+                            {{ .Scratch.Set "name" "First Name" }}
+                            {{ .Scratch.Set "type" "text" }}
+                            {{ .Scratch.Set "req" true }}
+                            {{ partial "forms/input" . }}
                         </div>
-                        <div class="w-1of2 pl-3 mb-6">
-                            <label for="last-name" class="fs-16 fw-700 lh-3">Last Name</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="last-name" type="text" name="last-name" aria-describedby="error-message-2" required>
-                            <div id="error-message-2" class="visually-hidden">This field is required.</div>
+                        <div class="w-full md__w-1of2 md__pl-3 mb-6">
+                            {{ .Scratch.Set "label" "Last Name" }}
+                            {{ .Scratch.Set "name" "Last Name" }}
+                            {{ .Scratch.Set "type" "text" }}
+                            {{ .Scratch.Set "req" true }}
+                            {{ partial "forms/input" . }}
                         </div>
                     </div>
 
-                    <div class="w-1of2 pr-3 mb-6">
-                        <label for="nationality" class="fs-16 fw-700 lh-3">Nationality</label>
-                        <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="nationality" type="text" name="nationality">
+                    <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                        {{ .Scratch.Set "label" "Nationality" }}
+                        {{ .Scratch.Set "name" "Nationality" }}
+                        {{ .Scratch.Set "type" "text" }}
+                        {{ .Scratch.Set "req" false }}
+                        {{ partial "forms/input" . }}
                     </div>
 
-                    <div class="d-flex">
-                        <div class="w-1of2 pr-3 mb-6">
-                            <label for="email" class="fs-16 fw-700 lh-3">Email</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="email" type="email" name="email" aria-describedby="error-message-4" required>
-                            <div id="error-message-4" class="visually-hidden">This field is required.</div>
+                    <div class="d-flex fx-w-wrap">
+                        <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                            {{ .Scratch.Set "label" "Email" }}
+                            {{ .Scratch.Set "name" "Email" }}
+                            {{ .Scratch.Set "type" "email" }}
+                            {{ .Scratch.Set "req" true }}
+                            {{ partial "forms/input" . }}
                         </div>
-                        <div class="w-1of2 pl-3 mb-6">
-                            <label for="tel" class="fs-16 fw-700 lh-3">Phone</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="tel" type="tel" name="tel">
+                        <div class="w-full md__w-1of2 md__pl-3 mb-6">
+                            {{ .Scratch.Set "label" "Phone" }}
+                            {{ .Scratch.Set "name" "Phone" }}
+                            {{ .Scratch.Set "type" "tel" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
                     </div>
 
                     <fieldset class="mb-6">
-                        <legend class="fw-700 tt-upper ls-loose d-block mb-3 c-white">Institutional Affiliation</legend>
-                        <div class="d-flex">
-                            <div class="w-1of2 pr-3">
-                                <label for="title" class="fs-16 fw-700 lh-3">Title</label>
-                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="title" type="text" name="title">
+                        <legend class="title-2 d-block mb-3">Institutional Affiliation</legend>
+                        <div class="d-flex fx-w-wrap">
+                            <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                                {{ .Scratch.Set "label" "Title" }}
+                                {{ .Scratch.Set "name" "Academic Title" }}
+                                {{ .Scratch.Set "type" "text" }}
+                                {{ .Scratch.Set "req" false }}
+                                {{ partial "forms/input" . }}
                             </div>
-                            <div class="w-1of2 pl-3">
-                                <label for="position" class="fs-16 fw-700 lh-3">Position</label>
-                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="position" type="text" name="position">
+                            <div class="w-full md__w-1of2 md__pl-3">
+                                {{ .Scratch.Set "label" "Position" }}
+                                {{ .Scratch.Set "name" "Academic Position" }}
+                                {{ .Scratch.Set "type" "text" }}
+                                {{ .Scratch.Set "req" false }}
+                                {{ partial "forms/input" . }}
                             </div>
                         </div>
                     </fieldset>
@@ -70,13 +87,13 @@
             
                 </section>
 
-                <section class="w-1of2 pl-6">
+                <section class="w-full lg__w-1of2 p-6">
                     <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">Conference Theme</h2>
                     <fieldset class="mb-6">
-                        <legend class=" fw-700 tt-upper ls-loose d-block mb-3 c-white">Choose your theme</legend>
+                        <legend class="title-2 d-block mb-3">Choose your theme</legend>
                         <div>
                             {{ range .Site.Data.themes.themes }}
-                                {{partial "radio.html" .}}
+                                {{partial "forms/radio.html" .}}
                             {{end}}
                         </div>
                     </fieldset>
@@ -84,108 +101,151 @@
                 
             </div>
 
+
             <div class="d-flex pl-6 pr-6 pb-9 pt-6">
 
-                <section class="w-1of2 pr-6 bor-s-dotted bor-w-2">
+                <section class="w-full lg__w-1of2 p-6">
                     <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">1st co-author</h2>
             
-                    <div class="d-flex">
-                        <div class="w-1of2 pr-3 mb-6">
-                            <label for="first-name-co-a-1" class="fs-16 fw-700 lh-3">First Name</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="first-name-co-a-1" type="text" name="first-name-co-a-1" >
+                    <div class="d-flex fx-w-wrap">
+                        <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                            {{ .Scratch.Set "label" "First Name" }}
+                            {{ .Scratch.Set "name" "1st co-author First Name" }}
+                            {{ .Scratch.Set "type" "text" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
-                        <div class="w-1of2 pl-3 mb-6">
-                            <label for="last-name-co-a-1" class="fs-16 fw-700 lh-3">Last Name</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="last-name-co-a-1" type="text" name="last-name-co-a-1">
+                        <div class="w-full md__w-1of2 md__pl-3 mb-6">
+                            {{ .Scratch.Set "label" "Last Name" }}
+                            {{ .Scratch.Set "name" "1st co-author Last Name" }}
+                            {{ .Scratch.Set "type" "text" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
                     </div>
 
-                    <div class="w-1of2 pr-3 mb-6">
-                        <label for="nationality-co-a-1" class="fs-16 fw-700 lh-3">Nationality</label>
-                        <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="nationality-co-a-1" type="text" name="nationality-co-a-1">
+                    <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                        {{ .Scratch.Set "label" "Nationality" }}
+                        {{ .Scratch.Set "name" "1st co-author Nationality" }}
+                        {{ .Scratch.Set "type" "text" }}
+                        {{ .Scratch.Set "req" false }}
+                        {{ partial "forms/input" . }}
                     </div>
 
-                    <div class="d-flex">
-                        <div class="w-1of2 pr-3 mb-6">
-                            <label for="email-co-a-1" class="fs-16 fw-700 lh-3">Email</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="email-co-a-1" type="email" name="email-co-a-1" >
+                    <div class="d-flex fx-w-wrap">
+                        <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                            {{ .Scratch.Set "label" "Email" }}
+                            {{ .Scratch.Set "name" "1st co-author Email" }}
+                            {{ .Scratch.Set "type" "email" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
-                        <div class="w-1of2 pl-3 mb-6">
-                            <label for="tel-co-a-1" class="fs-16 fw-700 lh-3">Phone</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="tel-co-a-1" type="tel" name="tel-co-a-1">
+                        <div class="w-full md__w-1of2 md__pl-3 mb-6">
+                            {{ .Scratch.Set "label" "Phone" }}
+                            {{ .Scratch.Set "name" "1st co-author Phone" }}
+                            {{ .Scratch.Set "type" "tel" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
                     </div>
 
                     <fieldset class="mb-6">
-                        <legend class="fw-700 tt-upper ls-loose d-block mb-3 c-white">Institutional Affiliation</legend>
-                        <div class="d-flex">
-                            <div class="w-1of2 pr-3">
-                                <label for="title-co-a-1" class="fs-16 fw-700 lh-3">Title</label>
-                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="title-co-a-1" type="text" name="title-co-a-1">
+                        <legend class="title-2 d-block mb-3">Institutional Affiliation</legend>
+                        <div class="d-flex fx-w-wrap">
+                            <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                                {{ .Scratch.Set "label" "Title" }}
+                                {{ .Scratch.Set "name" "1st co-author Academic Title" }}
+                                {{ .Scratch.Set "type" "text" }}
+                                {{ .Scratch.Set "req" false }}
+                                {{ partial "forms/input" . }}
                             </div>
-                            <div class="w-1of2 pl-3">
-                                <label for="position-co-a-1" class="fs-16 fw-700 lh-3">Position</label>
-                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="position-co-a-1" type="text" name="position-co-a-1">
+                            <div class="w-full md__w-1of2 md__pl-3">
+                                {{ .Scratch.Set "label" "Position" }}
+                                {{ .Scratch.Set "name" "1st co-author Academic Position" }}
+                                {{ .Scratch.Set "type" "text" }}
+                                {{ .Scratch.Set "req" false }}
+                                {{ partial "forms/input" . }}
                             </div>
                         </div>
                     </fieldset>
-
-                    <label for="bio-co-a-1" class="fs-16 fw-700 lh-3">Bio</label>
-                    <textarea class="p-1 w-full h-25 input lh-3" id="bio-co-a-1" name="bio-co-a-1"></textarea>
-
+    
+                    <label for="bio-1" class="fs-16 fw-700 lh-3">Bio</label>
+                    <textarea class="p-1 w-full h-25 input lh-3" id="bio-1" name="1st co-author bio"></textarea>
+            
                 </section>
 
-                <section class="w-1of2 pl-6 ">
+                <section class="w-full lg__w-1of2 p-6">
                     <h2 class="bg-black c-main fs-16 lh-4 pl-1 pr-1 fw-400 tt-upper ls-loose mb-3">2nd co-author</h2>
             
-                    <div class="d-flex">
-                        <div class="w-1of2 pr-3 mb-6">
-                            <label for="first-name-co-a-2" class="fs-16 fw-700 lh-3">First Name</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="first-name-co-a-2" type="text" name="first-name-co-a-2" >
+                    <div class="d-flex fx-w-wrap">
+                        <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                            {{ .Scratch.Set "label" "First Name" }}
+                            {{ .Scratch.Set "name" "2nd co-author First Name" }}
+                            {{ .Scratch.Set "type" "text" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
-                        <div class="w-1of2 pl-3 mb-6">
-                            <label for="last-name-co-a-2" class="fs-16 fw-700 lh-3">Last Name</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="last-name-co-a-2" type="text" name="last-name-co-a-2">
+                        <div class="w-full md__w-1of2 md__pl-3 mb-6">
+                            {{ .Scratch.Set "label" "Last Name" }}
+                            {{ .Scratch.Set "name" "2nd co-author Last Name" }}
+                            {{ .Scratch.Set "type" "text" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
                     </div>
 
-                    <div class="w-1of2 pr-3 mb-6">
-                        <label for="nationality-co-a-2" class="fs-16 fw-700 lh-3">Nationality</label>
-                        <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="nationality-co-a-2" type="text" name="nationality-co-a-2">
+                    <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                        {{ .Scratch.Set "label" "Nationality" }}
+                        {{ .Scratch.Set "name" "2nd co-author Nationality" }}
+                        {{ .Scratch.Set "type" "text" }}
+                        {{ .Scratch.Set "req" false }}
+                        {{ partial "forms/input" . }}
                     </div>
 
-                    <div class="d-flex">
-                        <div class="w-1of2 pr-3 mb-6">
-                            <label for="email-co-a-1" class="fs-16 fw-700 lh-3">Email</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="email-co-a-1" type="email" name="email-co-a-1" >
+                    <div class="d-flex fx-w-wrap">
+                        <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                            {{ .Scratch.Set "label" "Email" }}
+                            {{ .Scratch.Set "name" "2nd co-author Email" }}
+                            {{ .Scratch.Set "type" "email" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
-                        <div class="w-1of2 pl-3 mb-6">
-                            <label for="tel-co-a-2" class="fs-16 fw-700 lh-3">Phone</label>
-                            <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="tel-co-a-2" type="tel" name="tel-co-a-2">
+                        <div class="w-full md__w-1of2 md__pl-3 mb-6">
+                            {{ .Scratch.Set "label" "Phone" }}
+                            {{ .Scratch.Set "name" "2nd co-author Phone" }}
+                            {{ .Scratch.Set "type" "tel" }}
+                            {{ .Scratch.Set "req" false }}
+                            {{ partial "forms/input" . }}
                         </div>
                     </div>
 
                     <fieldset class="mb-6">
-                        <legend class="fw-700 tt-upper ls-loose d-block mb-3 c-white">Institutional Affiliation</legend>
-                        <div class="d-flex">
-                            <div class="w-1of2 pr-3">
-                                <label for="title-co-a-2" class="fs-16 fw-700 lh-3">Title</label>
-                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="title-co-a-2" type="text" name="title-co-a-2">
+                        <legend class="title-2 d-block mb-3">Institutional Affiliation</legend>
+                        <div class="d-flex fx-w-wrap">
+                            <div class="w-full md__w-1of2 md__pr-3 mb-6">
+                                {{ .Scratch.Set "label" "Title" }}
+                                {{ .Scratch.Set "name" "2nd co-author Academic Title" }}
+                                {{ .Scratch.Set "type" "text" }}
+                                {{ .Scratch.Set "req" false }}
+                                {{ partial "forms/input" . }}
                             </div>
-                            <div class="w-1of2 pl-3">
-                                <label for="position-co-a-2" class="fs-16 fw-700 lh-3">Position</label>
-                                <input class="h-4 lh-4 pl-1 pr-1 w-full input" id="position-co-a-2" type="text" name="position-co-a-2">
+                            <div class="w-full md__w-1of2 md__pl-3">
+                                {{ .Scratch.Set "label" "Position" }}
+                                {{ .Scratch.Set "name" "2nd co-author Academic Position" }}
+                                {{ .Scratch.Set "type" "text" }}
+                                {{ .Scratch.Set "req" false }}
+                                {{ partial "forms/input" . }}
                             </div>
                         </div>
                     </fieldset>
-
-                    <label for="bio-co-a-2" class="fs-16 fw-700 lh-3">Bio</label>
-                    <textarea class="p-1 w-full h-25 input lh-3" id="bio-co-a-2" name="bio-co-a-2"></textarea>
-
+    
+                    <label for="bio-2" class="fs-16 fw-700 lh-3">Bio</label>
+                    <textarea class="p-1 w-full h-25 input lh-3" id="bio-2" name="2nd co-author bio"></textarea>
+            
                 </section>
             </div>
 
-            <button class="mb-6 mr-auto ml-auto g-recaptcha h-5 lh-4 ta-center bo-w-2 bo-s-solid pl-3 pr-3 tt-upper ls-loose fs-18 fw-700 h__bg-black h__c-white h__bo-c-black animate" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline" style="cursor:pointer;"s>Submit</button>
+            <button class="mb-6 mr-auto ml-auto g-recaptcha h-5 lh-4 ta-center bo-w-2 bo-s-solid pl-3 pr-3 tt-upper ls-loose fs-18 fw-700 bg-white h__bg-black h__c-white h__bo-c-black animate" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline" style="cursor:pointer;"s>Submit</button>
 
         </form>
     </div>

@@ -1,0 +1,20 @@
+
+<label 
+    for="{{ .Scratch.Get "name" | urlize }}" 
+    class="fs-16 fw-700 lh-3"
+>
+{{ .Scratch.Get "label" }}
+</label>
+<input 
+    class="h-4 lh-4 pl-1 pr-1 w-full input" 
+    id="{{ .Scratch.Get "name" | urlize }}" 
+    type="{{ .Scratch.Get "type" }}" 
+    name="{{ .Scratch.Get "name" }}" 
+    {{ if eq true (.Scratch.Get "req") }}
+    aria-describedby="error-message-{{ .Scratch.Get "name" | urlize }}"
+    required
+    {{ end }}
+>
+{{ if eq true (.Scratch.Get "req") }}
+<div id="error-message-{{ .Scratch.Get "name" | urlize }}" class="error-message ff-serif fs-14 lh-3">This field is required.</div>
+{{ end }}

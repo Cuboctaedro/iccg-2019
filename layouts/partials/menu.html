@@ -1,9 +1,10 @@
-<nav role="navigation" aria-label="Main navigation" id="nav">
-    <ul class="d-flex pr-6 w-full jc-end" >
+<nav role="navigation" aria-label="Main navigation" id="nav" class="ta-right">
+    <a class="d-in-bl lg__d-none h__c-red c-main lh-4 p-1 animate mr-6" href="#" data-toggle-menu="#menulist">Menu</a>
+    <ul class="pr-6 pl-6 pos-absolute top-6 left-0 right-0 lg__pos-static z-3 bg-black w-full lg__w-auto ta-center lg__ta-right" id="menulist">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}" class="d-block tt-upper ls-loose lh-4 p-1 {{ if eq $currentPage.URL .URL }}c-white{{else}}c-main{{ end }}">
+            <li class="lg__d-in-bl">
+                <a href="{{ .URL }}" class="h__c-red d-block lh-4 p-1 {{ if eq $currentPage.URL .URL }}c-white{{else}}c-main{{ end }}">
                     <span>{{ .Name }}</span>
                 </a>
             </li>

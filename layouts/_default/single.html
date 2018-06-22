@@ -1,9 +1,9 @@
 {{ define "main" }}
 <article class="single">
-    <header>
-        <h1 itemprop="name">{{ .Title }}</h1>
+    <header class="p-6">
+        <h1 itemprop="name" class="fs-36 md__fs-48 lh-6 fw-900 c-red mb-3">{{ .Title }}</h1>
     </header>
-    <div itemprop="description">
+    <div class="pl-6 pr-6 content w-full  lg__w-2of3 xl__w-1of2">
         {{ .Content }}
     </div>
 </article>
