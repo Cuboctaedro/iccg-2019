@@ -1,15 +1,27 @@
 ---
 title: About
 draft: false
-menu: "main"
 ---
-## Date & duration
+**Previous ICCG conferences:**
 
-**Friday 19 - Tuesday 23 April 2019**
-This final option is the best case for a number of reasons. First of all, the proposed venue (School of Architecture of the National Technical University of Athens - NTUA) will be free of classes and available. Secondly, the dates include both the Catholic Easter (21 April 2019), and the first days of the Orthodox Easter Break for 2019. The weather is quite pleasant in late April, and participants will also be able to take advantage of a couple of extra days of Easter vacation at the end of the conference. Duration is 5 days, though the opening is only a half day, starting in the afternoon, to allow participants the morning to arrive and settle in. Both days of the weekend are included in order to help people who do not have semester session to come. We did not choose the option of June, as the atmosphere will be exhausting (especially during the fieldtrips) due to the heat, and at the same time, it will be a high touristic period with the prices of accommodation and travelling quite raised. 
+[Ramallah, Palestine 2015](https://iccg2015.org/)
+
+Frankfurt, Germany, 2011
+
+Mumbai, India, 2007 
+
+Mexico City, Mexico, 2005 
+
+Békéscsaba, Hungary, 2002 
+
+Taegu, South Korea, 2000
+
+Vancouver, Canada, 1997  
+
+ 
+
+## 
 
 ## Local team & venue
 
-We consider it advantageous, for organisational and visibility reasons, as well as for attracting local participants, to associate the conference with the following higher education institutions in Athens: the National Technical University (NTUA), which includes the School of Architecture, an institution with important research and political contribution to urban issues; Harokopeio University (HUA), which is the main geography hub in Greece; the National Centre for Social Research (NCSR), which, apart from its scientific contribution, will also provide space for holding some of the conference sessions; and, finally, Panteion University of Social and Political Sciences (PUA), which will contributed to added publicity for the conference. 
-
-NTUA will be our main venue of the conference. It is centrally located, in the neighbourhood of Exarcheia, well-known for being the locus of various radical political and activist groups and a meeting point for locals and migrants as well. Moreover, NTUA itself has a history of dissent, going back to the Junta years, and a commitment to anti-authoritarian politics. Therefore, it represents a politically open and militant academic institution. Its central location will make it more accessible to participants, who can choose to stay in the neighbourhood. Group meals prepared by migrant and other solidarity groups will also be more easily organised. In addition, field trips in the centre of Athens will be conducted on foot. Social events can take place either inside, or in the surrounding area. All of central Athens can be easily accessed on foot or by public transportation. Use of university facilities (rooms, courtyard, equipment) will be free of charge, allowing us to use the budget for other needs. Altogether, we consider it to be the most appropriate location for the conference.
+The conference will be hosted in the following higher education institutions in Athens: the **National Technical University** (NTUA), which includes the School of Architecture, an institution with important research and political contribution to urban issues; **Harokopeio University** (HUA), which is the main geography hub in Greece; the **National Centre for Social Research** (NCSR), which, apart from its scientific contribution, will also provide space for holding some of the conference sessions; and, finally, **Panteion University of Social and Political Sciences** (PUA), which will contributed to added publicity for the conference.
