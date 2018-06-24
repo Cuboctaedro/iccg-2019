@@ -1,6 +1,5 @@
 ---
-title: "Home"
+title: Home
+draft: true
 ---
-His ex exerci partiendo, eum libris viderer delicata at. Tamquam apeirian pro in, ex per quod putant maiorum. Vis dicant adipisci at, at feugiat incorrupte vim, quem dicunt no nam. Erat instructior te pro, eos ad veritus feugait liberavisse.
-
-Euismod deleniti persequeris an sed, sea idque ridens alienum in. Postulant vulputate deseruisse mei ei, an duo mucius volumus, essent maiestatis has an. Vide falli labores nam ne, est persius electram patrioque in. Mel rationibus accommodare an, ignota possit eum at. Has ei assentior voluptatibus.
+The 8th ICCG will be hosted from the 19th to the 23d of April 2019, in Athens, Greece, one of many loci of the ongoing and multiplying crises of the neoliberal 21st century, including the “debt crisis,” the “neo-fascist crisis”, the “refugee crisis,” and a place that could be regarded as a kind of  “laboratory” for observing how uneven development and everywhere war articulate different actors, scales and operations.
