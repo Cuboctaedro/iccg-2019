@@ -1,6 +1,7 @@
 ---
 title: About
 draft: false
+menu: "main"
 ---
 **Previous ICCG conferences:**
 

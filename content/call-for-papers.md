@@ -1,6 +1,7 @@
 ---
 title: Call for participation
 draft: false
+menu: "main"
 ---
 The theme of the conference “**in permanent crisis? seeking radical praxis in times of uneven development and everywhere war**” seeks to elaborate on the structural relations, materialities and cultures of uneven development and everywhere war, (a term borrowed from Derek Gregory), which bring about the condition of permanent crisis we find ourselves in the world over. Building on the previous ICCG 2015 conference, we regard “permanent crisis” as a regime that needs to be radically challenged in both political and theoretical terms, in our everyday lives as well as in the host of global, national and local institutions that reproduce it. We therefore want to invoke again the notion of praxis as the realisation of collective thinking and acting that is required in order to remake (change?) the world.
 
@@ -10,21 +11,21 @@ Taking Greece as an example, as a kind of “hot-spot” for observing key socio
 
 
 
-## **Conference Sub-themes:**
+## Conference Sub-themes:
 
-**Rise of neofascism, nationalism and authoritarianism **	
+**Rise of neofascism, nationalism and authoritarianism**	
 
 > These seem to be good days for authoritarian rule both in the global West and in the global South, nourished by a widespread sense of crisis and decline. Political freedoms deteriorate as opposition movements get under attack by various mutations of the war(s) on terror and state(s) of emergency. Authoritarian leaders gain massive support based on remaking or reframing external and internal enemies of the national bodies, while the rise of neofascist movements and parties is reminiscent of what the ultimate perspective of nationalism and authoritarianism is. Contributions to this sub-theme will discuss relevant theoretical and conceptual frameworks, as well as empirical research.
 >
 > Topics of interest include, but are not limited to, the following: authoritarian governments around the globe; law and order agendas and policies; geographies of the war on terror; neocolonial nationalism; far-right mobilization; digital fascism; authoritarian visions of neo-liberal accumulation and development; far-right violence; scapegoating.
 
-**Migration and global mobility control **
+**Migration and global mobility control**
 
 > Although human mobilities and different forms of migration are an ongoing phenomenon, they are today associated with emergency responses and confronted with extreme migration policies. The “management of migration” from the global to the local is related to new forms of control and the multiplication of borders, producing (il)legalities and exclusions. At the same time, migration reshapes and is reshaped by contemporary spatialities, everyday sociabilities and interethnic relations, identities, collective practices and even conflicts in specific sites. 
 >
 > Topics of interest include, but are not limited to, the following: governmentality of migration policies, securitization and border control practices, vulnerabilities, immobilities and waiting, gendered and feminist perspectives on migration, solidarity responses, coexistences, co-presences and conflicts in the urban space, identities and subjectivities in the migration process. 
 
-**Geographies of radical feminism **
+**Geographies of radical feminism**
 
 > Feminist acquis are under attack the world over. Bills against legal abortion in Ireland and the US, protests against same-sex marriage in France, violence against LGBTQI activists in Latin America, are only some of the many faces of the backlash against hard-won gender rights. At the same time, the detrimental impact of neoliberal crises on women and sexual minorities is undeniable. The rise in domestic and sexual violence, women’s entrenched poverty and precarity, gendered violence in war zones and in refugee displacement, the persecution of women and queer persons are already well documented phenomena. As anti-gender campaigns are gaining ground with the widening hold of neo-fascist populism and post-neoliberal authoritarian politics, we believe it is extremely important and timely to explore different paths to resistance as well as emerging feminist and queer imaginaries that anticipate other worlds. From a feminist intersectional approach, differential access to social and cultural resources, - including safety, rights, mobility, education, housing, welfare, health, water and other basic resources - is conditioned by the “interlocking oppressions” of class/economic exploitation, racism, nationalism, heterosexism, ageism and ableism. In this sense, gender is already implicated in all of the different sub-themes of this conference, and we would like to invite papers that address this accordingly. In addition, we would like to invite papers that explore more specifically the ways in which gender and sexuality, in particular, become nodal points of domination and resistance, both in material and in knowledge terms. 
 >
@@ -34,32 +35,32 @@ Taking Greece as an example, as a kind of “hot-spot” for observing key socio
 
 > Within the persistent, contemporary, structural capitalist crisis there is a global bourgeois project of re-making nature which basically serves the four pillars of globalization, deregulation, technocratic policy and interests of large enterprises. From China to the US and from Africa to the EU, there are hundreds of current examples of the commodification, marketisation and financialisation of nature and urban spaces. On the other hand, we face an upsurge of socio-environmental grassroot movements waging resistance in very heterogeneous environments both in rural and urban areas. that seek to counteract the injustices and inequalities and reconfigure socio-ecological relations. All these conflicts and movements require a better and in-depth attention and critical reflection. What practical, political and theoretical innovations will allow us to better understand them, engage with them and contest them? What kinds of (new) power relations are reproduced through the making of environmental markets, and what sociospatial and environmental justice issues are brought to light? What can we learn from the ongoing socio-environmental and urban conflicts / movements? What are their claims for collective self-determination? What is the renewed right to the city?
 
-**Social Movements  **
+**Social Movements**
 
-**Precarity, marginality and the (not always) new subjectivities **
+**Precarity, marginality and the (not always) new subjectivities**
 
 > With the transformation of labor and production in advanced capitalist systems, especially in the context of the crisis-generated restructuring, the notions of precarity and precariousness emerge to include not only the “traditionally” excluded from the traditional labor forms but also a large variety of population from the previously “deserving”, to the “new” illegals, undocumented and refugees. Precarity either described as an outcome of neoliberal capitalism and shift from Fordism to post-Fordism, or as a timeless feature of capitalist societies that produce permanent outsiders, runs in parallel with the deepening socioeconomic inequalities and polarization. The growing numbers of poor, unemployed, and underemployed people through the flexible labor regime, exploitation, and insufficiency of traditional forms of union organization, reproduce continuously the marginal mass and the social divisions and exclusions. The relevant discussion emerged mostly through social and political struggles unfolds till now issues of collective identities, citizenship and politics. At the same time, issues of time, space and everyday life transformations emerge to construct new socio-spatial realities, and transformed social relations and sociabilities. 
 
-**War, Security, Humanitarianism **
+**War, Security, Humanitarianism**
 
 > Cities turned into battlefields, massive slaughter of civilians, military technologies in the service of architecture and spatial planning, army forces performing police operations and police forces in military raids, militarization of and killings at the borders, 'fourth-generation' wars and war games, war technologies and infrastructure turned into private goods: the infiltration of 'ordinary' social life by war seems today to be more prominent than ever. The sad convergence between war and peace becomes all the more evident, for example in the systematization of the humanitarian treatment of war victims. From this perspective, it is important to theorize not only the social and geographic implications of this or that war but also war as a destructive and at the same time constitutive force for people and places. We welcome contributions that would investigate the spatiality of contemporary warfare and the uneven geographic implications of contemporary war(s) at various scales from the global to the local.
 
-**Austerity Urbanism & Social Reproduction **
+**Austerity Urbanism & Social Reproduction**
 
 > Since the introduction of the term by J. Peck in 2012 austerity urbanism has been used in different contexts to describe the multiple realities of cities in crisis in times of neoliberalism. Despite the diverse historical trajectories, development patterns and social characteristics, many cities across the world seem to face similar processes, connected with the reduction of public spending, privatization policies and the shrinking of core public functions and services. But far from representing simply an aggressive economic doctrine, austerity urbanism has multiple social, political and cultural implications; from the rise of new forms of deprivation and new geographies of polarization and inequality to the collapse of local economies and the subsequent crisis of social reproduction; and from changes in governance mechanisms and planning ideologies, to the rise of political contestation and the emergence of collective practices and novel solidarity initiatives. We welcome contributions that critically examine these issues and we aim to deepen our understanding on the repercussions of austerity urbanism in different cities and  discuss the possibilities for radical praxis.
 
-**New geographies of colonialism **
+**New geographies of colonialism**
 
 > Post-colonial approaches have illustrated the strong links of colonialism with geography and territory, not only in regards to land and resources but also in relation to ideas and representations. In the increasingly harsher terrain of international (economic but not only) domination, competition for the control of resources and the coercive imposition of biased regulations have been debated as new and/or continuing forms of colonialism and imperialism, affecting both people and places as well as potentialities for the future. In this sense, negotiations over international and humanitarian aid agreements, debt-associated arrangements, privatizations and economic pacts, colonial legacies and even wars and the externalization of migration shape these new geographies of colonialism and further exacerbate uneven development and culminate political, geographical and representational legacies. In this stream we welcome contributions that examine these issues (but not exclusively) through a post-colonial or neo-imperialism lens and contributions that discuss the potentialities of developing counter-narratives and institutions in these contexts.
 
 
 
-## **Submit a paper and/or panel, roundtable, session**
+## Submit a paper and/or panel, roundtable, session
 
 We invite you to submit paper abstracts and encourage proposals for populated panels, roundtable discussions, or sessions with alternative formats that address the proposed conference themes. As indicated in the application form, we ask that you include (a) information on which conference theme your panel or paper addresses; (b) title of your paper or session; (c) a brief bio (max. 100 words) of each participant with contact information, institutional affiliation, and any titles you would like placed in the program; (d) an abstract (max 500 words). Please take into consideration that proposed activities should fit into the 90-minutes time-slots. 
 
 
 
-## **_Deadline for submissions is 20 October 2018_**
+## Deadline for submissions is 20 October 2018
 
 **click here for submission form**

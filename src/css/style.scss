@@ -1,54 +1,6 @@
 /* EXAMPLE FILE */
 
 // 1. @fontface declarations
-// @import url("//hello.myfonts.net/count/36e962");
-
-  
-// @font-face {
-//     font-family: 'Olympian';
-//     font-weight: 400;
-//     font-style: italic;
-//     src: url('webfonts/36E962_0_0.eot');
-//     src: url('webfonts/36E962_0_0.eot?#iefix') format('embedded-opentype'),
-//     url('webfonts/36E962_0_0.woff2') format('woff2'),
-//     url('webfonts/36E962_0_0.woff') format('woff'),
-//     url('webfonts/36E962_0_0.ttf') format('truetype');
-// }
- 
-  
-// @font-face {
-//     font-family: 'Olympian';
-//     font-weight: 400;
-//     font-style: normal;
-//     src: url('webfonts/36E962_1_0.eot');
-//     src: url('webfonts/36E962_1_0.eot?#iefix') format('embedded-opentype'),
-//     url('webfonts/36E962_1_0.woff2') format('woff2'),
-//     url('webfonts/36E962_1_0.woff') format('woff'),
-//     url('webfonts/36E962_1_0.ttf') format('truetype');
-// }
- 
-  
-// @font-face {
-//     font-family: 'NeuePlak';
-//     font-weight: 700;
-//     src: url('webfonts/36E962_2_0.eot');
-//     src: url('webfonts/36E962_2_0.eot?#iefix') format('embedded-opentype'),
-//     url('webfonts/36E962_2_0.woff2') format('woff2'),
-//     url('webfonts/36E962_2_0.woff') format('woff'),
-//     url('webfonts/36E962_2_0.ttf') format('truetype');
-// }
- 
-  
-// @font-face {
-//     font-family: 'NeuePlak-Cond';
-//     font-weight: 800;
-//     src: url('webfonts/36E962_3_0.eot');
-//     src: url('webfonts/36E962_3_0.eot?#iefix') format('embedded-opentype'),
-//     url('webfonts/36E962_3_0.woff2') format('woff2'),
-//     url('webfonts/36E962_3_0.woff') format('woff'),
-//     url('webfonts/36E962_3_0.ttf') format('truetype');
-// }
- 
 
 // 2. Reset, normalize etc.
 
@@ -251,4 +203,13 @@ button {
             box-shadow: map-get(map-get($global-box-shadow-settings, 'values'), '3');
         }
     }
+}
+.facebook:hover svg {
+    fill: #3B5998;
+}
+.twitter:hover svg {
+    fill: #1DA1F2;
+}
+.linkedin:hover svg {
+    fill: #0077B5;
 }

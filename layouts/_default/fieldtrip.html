@@ -1,16 +1,16 @@
 {{ define "main" }}
-<article class="d-block p-6" itemprop="mainEntity" itemscope itemtype="https://schema.org/Event" >
-    <header class="mb-3">
+<article itemprop="mainEntity" itemscope itemtype="https://schema.org/Event" class="md__p-3">
+    <header class="p-3">
         <h1 itemprop="name" class="boxed">{{ .Title }}</h1>
     </header>
-    <div class="d-flex">
-        <div itemprop="about" class="w-1of2 pr-3 bor-w-2 bor-s-dotted">
+    <div class="d-flex fx-w-wrap">
+        <div itemprop="about" class="w-full lg__w-2of3 xl__w-1of2 p-3">
             <h3 class="title-1 mb-3 animate">
                 {{ .Params.trip_title }}
             </h3>
             <div class="content max-w-75">{{ .Content }}</div>
         </div>
-        <aside class="pl-3 w-1of2">
+        <aside class="w-full lg__w-1of3 xl__w-1of2 p-3">
             <time itemprop="doorTime" class="title-2 d-block mb-2">{{ dateFormat "Monday, Jan 2, 2006" .Params.eventdate }}</time>
             <div>
                 <span class="fw-600 d-block">Participants:</span>

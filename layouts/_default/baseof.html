@@ -12,8 +12,6 @@
     
     <link rel="stylesheet" href="https://use.typekit.net/xwr6fly.css">
 
-
-
     <link rel="stylesheet" href="{{ "assets/styles.css" | absURL }}">
     <meta name="robots" content="index, follow" />
 
@@ -43,9 +41,10 @@
                 Geography<br/>
                 2019<br/>
             </p>
-            <p class="fst-italic pb-3">
-                Conflict, War and Uneven Development:<br/>
-                De- and Re-constructions of space
+            <p class="w-30 pb-3 ff-serif fs-18 lh-3 fst-italic">
+                {{ with .Site.GetPage "home" "" }}
+                {{ .Params.congresstitle }}
+                {{ end }}
             </p>
         </div>
         
